@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR:400,700&display=swap');
 @import "reset.css";
+@import "header.css";
 
 * {
     box-sizing: border-box;
@@ -7,4 +8,10 @@
 
 body {
     font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
+    display: flex;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
