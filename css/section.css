@@ -1,0 +1,102 @@
+.content {
+    width: 1900px;
+    height: 750px;
+    display: flex;
+
+}
+
+.content video {
+    width: 1900px;
+    height: 100%;
+    object-fit: fill;
+}
+
+.content>.img-pan-container>video {
+    width: 150%;
+    height: 150%;
+    opacity: 0;
+    transition: opacity .6s linear .8s;
+    /*transition-property transition-duration transition-timing-function transition-delay*/
+}
+
+.content>.img-pan-container>video.loaded {
+    opacity: 1;
+}
+
+.img-pan-container,
+.img-pan-container>video {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.img-pan-container {
+    position: relative;
+    overflow: hidden;
+    cursor: move;
+    height: 100%;
+    width: 100%;
+}
+
+.img-pan-container>video {
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tip {
+    position: absolute;
+    z-index: 11;
+    color: white;
+    top: 33%;
+    left: 10%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.tip h1 {
+    font-size: 55px;
+}
+
+.tip p {
+    font-size: 30px;
+}
+
+.tip>div {
+    margin-top: 30px;
+}
+
+
+.tip2 {
+    position: absolute;
+    z-index: 11;
+    color: white;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.tip div,
+.tip2 div {
+    display: none;
+    overflow: hidden;
+}
+
+
+@media (max-width: 992px) {
+    .content {
+        height: 50%;
+    }
+
+    .content>.img-pan-container>video {
+        width: 259%;
+    }
+}
+
+.lt0 {
+    fill: #D99832;
+}

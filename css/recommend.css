@@ -1,0 +1,37 @@
+.recommend {
+    align-items: center;
+    width: 1500px;
+    height: 500px;
+}
+
+.recommend svg {
+    width: 35px;
+}
+
+.recommend article {
+    width: 1500px;
+}
+
+.recommend .textArea {
+    display: flex;
+    justify-content: center;
+    margin-left: 280px;
+}
+
+.recommend .textArea p {
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.recommend .imagesArea {
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.recommend .imagesArea img {
+    width: 450px;
+    height: 300px;
+}

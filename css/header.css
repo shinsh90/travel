@@ -6,7 +6,7 @@ nav {
     color: white;
     position: relative;
     width: 1700px;
-    height: 135px;
+    height: 130px;
     background: #e5a248;
 }
 
@@ -23,7 +23,7 @@ input {
 
 .logo {
     width: 200px;
-    height: 135px;
+    height: 130px;
     background: #2a2e30;
 
 }
@@ -48,7 +48,6 @@ input {
     display: flex;
     position: absolute;
     top: 50px;
-
 }
 
 .menu li {
