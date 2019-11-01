@@ -12,7 +12,6 @@ nav {
 
 input {
     color: #2A2E30;
-    background: white;
     border: none;
     margin-top: 22px;
     background: #e5a248;
@@ -25,6 +24,7 @@ input {
     width: 200px;
     height: 130px;
     background: #2a2e30;
+
 
 }
 
@@ -45,21 +45,31 @@ input {
 }
 
 .menu {
+    text-align: center;
     display: flex;
-    position: absolute;
-    top: 50px;
+    line-height: 130px;
 }
 
 .menu li {
+    height: 130px;
+    width: 13%;
     font-size: 30px;
-    margin-left: 125px;
+}
+
+.menu li a {
+    display: block;
+}
+
+.menu li a:hover {
+    transition: 0.5s;
+    color: #2A2E30;
 }
 
 .submenu {
     display: flex;
     position: absolute;
     right: 0;
-    top: 80px;
+    top: 55%;
     font-size: 18px;
 }
 
@@ -69,19 +79,30 @@ input {
 }
 
 .submenu li a {
+    display: block;
     padding: 10px;
+}
+
+.submenu li a:hover {
+    transition: 0.5s;
+    color: #FFFFFF;
 }
 
 .holder {
     position: absolute;
-    top: 45px;
-    left: 1000px;
+    top: 50%;
+    left: 65%;
     margin: -4px 0 0 8px;
     width: 0;
     border-bottom: 2.5px solid white;
     height: 45px;
     cursor: pointer;
     transition: width 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0.5s;
+}
+
+.holder:hover {
+    transition: 0.5s;
+    color: #2a2e30;
 }
 
 .holder.active {

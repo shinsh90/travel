@@ -19,3 +19,9 @@ $(".holder").on("click", function () {
     }
 });
 //-----------------------------------------------
+
+$(".hover").mouseleave(
+    function () {
+        $(this).removeClass("hover");
+    }
+);

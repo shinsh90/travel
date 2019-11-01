@@ -29,8 +29,8 @@ $(function () {
         var loopPlay = setInterval(function () {
             // console.log(Math.floor(myVideo.currentTime));
             if (Math.floor(myVideo.currentTime) == 0) {
-                showTip($(".tip"), 10, 30);
-                showTip($(".tip2"), 35, 15);
+                showTip($(".tip"), 5, 15);
+                showTip($(".tip2"), 15, 25);
             }
         }, 1000);
     });
