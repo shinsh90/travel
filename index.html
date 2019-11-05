@@ -1,220 +1,259 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>travel</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <!-- 헤더시작 -->
-      <header>
-        <div class="logo">
-          <a href="#">
-            <svg
-              version="1.1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 200 130"
-              style="enable-background:new 0 0 200 130;"
-              xml:space="preserve"
-            >
-              <rect x="0.1" y="0.2" class="st0" width="200" height="135" />
-              <g>
-                <path
-                  class="st1"
-                  d="M103.8,22.5c1.7-0.8,3.3-1.8,5-2.4c7.1-2.4,15.2,1.1,18.1,7.9c0.2,0.6,0.5,0.8,1.2,0.9
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>신승한</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- 헤더시작 -->
+    <header>
+      <div class="logo">
+        <a href="#">
+          <svg version="1.1" x="0px" y="0px" viewBox="0 0 200 130" style="enable-background:new 0 0 200 130;"
+            xml:space="preserve">
+            <rect x="0.1" y="0.2" class="st0" width="200" height="135" />
+            <g>
+              <path class="st1"
+                d="M103.8,22.5c1.7-0.8,3.3-1.8,5-2.4c7.1-2.4,15.2,1.1,18.1,7.9c0.2,0.6,0.5,0.8,1.2,0.9
 		                        c10.9,1.5,18.5,13.9,10.6,24.5c-3.4,4.6-8.2,6.9-14.1,6.9c-16.5,0-33,0-49.6,0c-12.7,0-20.7-13.4-14.4-24c1.9-3.2,4.7-5.4,8.3-6.6
-		                        c0.6-0.2,0.9-0.5,0.9-1.2c1.1-10,10.2-17,20.5-15.5c5.9,0.8,10.3,3.9,13.2,9C103.7,22.2,103.8,22.4,103.8,22.5z"
-                />
-                <path
-                  class="st1"
-                  d="M108.4,98.7H92c-4.7,0-8.6-3.9-8.6-8.6v-4.3c0-4.7,3.9-8.6,8.6-8.6h16.4c4.7,0,8.6,3.9,8.6,8.6v4.3
-		                        C117,94.8,113.1,98.7,108.4,98.7z"
-                />
-                <text
-                  transform="matrix(1.035 0 0 1 61.6636 117.3702)"
-                  class="st1 st2 st3"
-                >
-                  Get tour
-                </text>
-                <path
-                  class="st1"
-                  d="M109.8,79h-0.4c-0.4,0-0.7-0.3-0.7-0.7V63.6c0-0.4,0.3-0.7,0.7-0.7h0.4c0.4,0,0.7,0.3,0.7,0.7v14.7
-		                        C110.5,78.7,110.2,79,109.8,79z"
-                />
-                <path
-                  class="st1"
-                  d="M91.3,79h-0.4c-0.4,0-0.7-0.3-0.7-0.7V63.6c0-0.4,0.3-0.7,0.7-0.7h0.4c0.4,0,0.7,0.3,0.7,0.7v14.7
-		                        C92,78.7,91.7,79,91.3,79z"
-                />
-              </g>
-            </svg>
-          </a>
-        </div>
-        <nav>
-          <ul class="menu">
-            <li><a href="#">여행지</a></li>
-            <li><a href="#">테마여행</a></li>
-            <li><a href="#">가이드</a></li>
-            <li><a href="#">Q&A</a></li>
-          </ul>
-          <div class="holder">
-            <span class="magnifying-glass"
-              ><input type="text" id="search_top" /><i class="material-icons"
-                >search</i
-              ></span
-            >
-          </div>
-
-          <ul class="submenu">
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
-          </ul>
-        </nav>
-      </header>
-      <!-- 헤더 끝 -->
-      <section class="content">
-        <video id="myVideo" autoplay="" loop="">
-          <source src="images/train.mp4" type="video/mp4" />
-        </video>
-        <div class="tip">
-          <h1>Time to travel</h1>
-          <div>
-            <p>No one realizes how beautiful it is to travel until he comes</p>
-            <p>home and rests his head on his old, familiar pillow.</p>
-            <p class="comment">여행 계획 세우기</p>
-          </div>
-        </div>
-      </section>
-      <hr />
-      <section class="recommend">
-        <div class="textArea">
-          <img src="images/nav.png" alt="추천 여행지 아이콘" />
-          <p>Get tour <span class="textColor">추천 여행지</span></p>
-        </div>
-        <div class="imagesArea">
-          <figure class="snip">
-            <img src="images/denmark.jpg" alt="덴마크" />
-            <figcaption>
-              <p>덴마크</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-          <figure class="snip">
-            <img src="images/france.jpg" alt="프랑스" />
-            <figcaption>
-              <p>프랑스</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-          <figure class="snip">
-            <img src="images/malaysia.jpg" alt="말레이시아" />
-            <figcaption>
-              <p>말레이시아</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-          <figure class="snip">
-            <img src="images/kyrgyzstan.jpg" alt="키르기스스탄" />
-            <figcaption>
-              <p>키르기스스탄</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-          <figure class="snip">
-            <img src="images/swis.jpg" alt="스위스" />
-            <figcaption>
-              <p>스위스</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-          <figure class="snip">
-            <img src="images/japan.jpg" alt="일본" />
-            <figcaption>
-              <p>일본</p>
-            </figcaption>
-            <a href="#"></a>
-          </figure>
-        </div>
-      </section>
-
-      <hr />
-      <section class="category">
-        <div class="textArea_c">
-          <img src="images/contents.png" alt="카테고리 아이콘" />
-          <p>Get tour <span class=" textColor">카테고리</span></p>
-        </div>
-        <ul class="category_menu">
-          <li class="category_menu_tabbtn">
-            <a href="#">
-              <div class="tabbtn_content">
-                <img src="images/room.png" alt="숙소 아이콘" /><br />
-                <p>숙소</p>
-              </div>
-            </a>
-          </li>
-          <li class="category_menu_tabbtn">
-            <a href="#">
-              <div class="tabbtn_content">
-                <img src="images/airplane.png" alt="항공권 아이콘" /><br />
-                <p>항공권</p>
-              </div>
-            </a>
-          </li>
-          <li class="category_menu_tabbtn">
-            <a href="#">
-              <div class="tabbtn_content">
-                <img src="images/cruise.png" alt="크루즈 아이콘" /><br />
-                <p>크루즈</p>
-              </div>
-            </a>
-          </li>
-          <li class="category_menu_tabbtn">
-            <a href="#">
-              <div class="tabbtn_content">
-                <img
-                  src="images/travelarticle.png"
-                  alt="여행용품 아이콘"
-                /><br />
-                <p>여행용품</p>
-              </div>
-            </a>
-          </li>
-          <li class="category_menu_tabbtn">
-            <a href="#">
-              <div class="tabbtn_content">
-                <img src="images/community.png" alt="커뮤니티 아이콘" /><br />
-                <p>커뮤니티</p>
-              </div>
-            </a>
-          </li>
-          <li class="category_menu_tabbtn">
-            <a href="#">
-              <div class="tabbtn_content">
-                <img src="images/event.png" alt="이벤트 아이콘" /><br />
-                <p>이벤트</p>
-              </div>
-            </a>
-          </li>
+		                        c0.6-0.2,0.9-0.5,0.9-1.2c1.1-10,10.2-17,20.5-15.5c5.9,0.8,10.3,3.9,13.2,9C103.7,22.2,103.8,22.4,103.8,22.5z" />
+              <path class="st1" d="M108.4,98.7H92c-4.7,0-8.6-3.9-8.6-8.6v-4.3c0-4.7,3.9-8.6,8.6-8.6h16.4c4.7,0,8.6,3.9,8.6,8.6v4.3
+		                        C117,94.8,113.1,98.7,108.4,98.7z" />
+              <text transform="matrix(1.035 0 0 1 61.6636 117.3702)" class="st1 st2 st3">
+                Get tour
+              </text>
+              <path class="st1" d="M109.8,79h-0.4c-0.4,0-0.7-0.3-0.7-0.7V63.6c0-0.4,0.3-0.7,0.7-0.7h0.4c0.4,0,0.7,0.3,0.7,0.7v14.7
+		                        C110.5,78.7,110.2,79,109.8,79z" />
+              <path class="st1" d="M91.3,79h-0.4c-0.4,0-0.7-0.3-0.7-0.7V63.6c0-0.4,0.3-0.7,0.7-0.7h0.4c0.4,0,0.7,0.3,0.7,0.7v14.7
+		                        C92,78.7,91.7,79,91.3,79z" />
+            </g>
+          </svg>
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">여행지</a></li>
+          <li><a href="#">테마여행</a></li>
+          <li><a href="#">가이드</a></li>
+          <li><a href="#">Q&A</a></li>
         </ul>
-        <div class="category_content_box">
-          <div class="category_content_bg">
-            <img src="images/room_bg.png" alt="숙소탭 배경" />
-          </div>
+        <div class="holder">
+          <span class="magnifying-glass"><input type="text" id="search_top" /><i
+              class="material-icons">search</i></span>
         </div>
-      </section>
-      <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-      <script src="scripts/menu.js"></script>
-      <script src="scripts/videoPanning.js"></script>
-      <script src="scripts/videoPlay.js"></script>
-    </div>
-  </body>
+
+        <ul class="submenu">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 헤더 끝 -->
+    <section class="content">
+      <video id="myVideo" autoplay="" loop="">
+        <source src="images/train.mp4" type="video/mp4" />
+      </video>
+      <div class="tip">
+        <h1>Time to travel</h1>
+        <div>
+          <p>No one realizes how beautiful it is to travel until he comes</p>
+          <p>home and rests his head on his old, familiar pillow.</p>
+          <p class="comment">여행 계획 세우기</p>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="recommend">
+      <div class="textArea">
+        <img src="images/nav.png" alt="추천 여행지 아이콘" />
+        <p>Get tour <span class="textColor">추천 여행지</span></p>
+      </div>
+      <div class="imagesArea">
+        <figure class="snip">
+          <img src="images/denmark.jpg" alt="덴마크" />
+          <figcaption>
+            <p>덴마크</p>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+        <figure class="snip">
+          <img src="images/france.jpg" alt="프랑스" />
+          <figcaption>
+            <p>프랑스</p>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+        <figure class="snip">
+          <img src="images/malaysia.jpg" alt="말레이시아" />
+          <figcaption>
+            <p>말레이시아</p>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+        <figure class="snip">
+          <img src="images/kyrgyzstan.jpg" alt="키르기스스탄" />
+          <figcaption>
+            <p>키르기스스탄</p>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+        <figure class="snip">
+          <img src="images/swis.jpg" alt="스위스" />
+          <figcaption>
+            <p>스위스</p>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+        <figure class="snip">
+          <img src="images/japan.jpg" alt="일본" />
+          <figcaption>
+            <p>일본</p>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+      </div>
+    </section>
+
+    <hr />
+    <section class="category">
+      <div class="textArea_c">
+        <img src="images/contents.png" alt="카테고리 아이콘" />
+        <p>Get tour <span class=" textColor">카테고리</span></p>
+      </div>
+      <ul id="category_menu">
+        <li class="category_menu_tabbtn">
+          <a href="#" title="tab1">
+            <div class="tabbtn_icons">
+              <img src="images/room_on.png" alt="숙소 아이콘" /><br />
+              <p>숙소</p>
+            </div>
+          </a>
+        </li>
+        <li class="category_menu_tabbtn">
+          <a href="#" title="tab2">
+            <div class="tabbtn_icons">
+              <img src="images/airplane_off.png" alt="항공권 아이콘" /><br />
+              <p>항공권</p>
+            </div>
+          </a>
+        </li>
+        <li class="category_menu_tabbtn">
+          <a href="#" title="tab3">
+            <div class="tabbtn_icons">
+              <img src="images/cruise_off.png" alt="크루즈 아이콘" /><br />
+              <p>크루즈</p>
+            </div>
+          </a>
+        </li>
+        <li class="category_menu_tabbtn">
+          <a href="#" title="tab4">
+            <div class="tabbtn_icons">
+              <img src="images/travelarticle_off.png" alt="여행용품 아이콘" /><br />
+              <p>여행용품</p>
+            </div>
+          </a>
+        </li>
+        <li class="category_menu_tabbtn">
+          <a href="#" title="tab5">
+            <div class="tabbtn_icons">
+              <img src="images/community_off.png" alt="커뮤니티 아이콘" /><br />
+              <p>커뮤니티</p>
+            </div>
+          </a>
+        </li>
+        <li class="category_menu_tabbtn">
+          <a href="#" title="tab6">
+            <div class="tabbtn_icons">
+              <img src="images/event_off.png" alt="이벤트 아이콘" /><br />
+              <p>이벤트</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div id="category_content_box">
+        <div id="cont1">
+          <img src="images/room_bg.png" alt="숙소탭 배경" />
+          <section class="content_main">
+            <h1>컨텐츠1</h1>
+            <article class="close_box">
+              <article class="close-container">
+                <article class="leftright"></article>
+                <article class="rightleft"></article>
+              </article>
+            </article>
+          </section>
+        </div>
+        <div id="cont2">
+          <img src="images/airplane_bg.png" alt="항공권탭 배경" />
+          <section class="content_main">
+            <h1>컨텐츠2</h1>
+            <article class="close_box">
+              <article class="close-container">
+                <article class="leftright"></article>
+                <article class="rightleft"></article>
+              </article>
+            </article>
+          </section>
+        </div>
+        <div id="cont3">
+          <img src="images/cruise_bg.png" alt="크루즈탭 배경" />
+          <section class="content_main">
+            <h1>컨텐츠3</h1>
+            <article class="close_box">
+              <article class="close-container">
+                <article class="leftright"></article>
+                <article class="rightleft"></article>
+              </article>
+            </article>
+          </section>
+        </div>
+        <div id="cont4">
+          <section class="content_main">
+            <h1>컨텐츠4</h1>
+            <article class="close_box">
+              <article class="close-container">
+                <article class="leftright"></article>
+                <article class="rightleft"></article>
+              </article>
+            </article>
+          </section>
+        </div>
+        <div id="cont5">
+          <section class="content_main">
+            <h1>컨텐츠5</h1>
+            <article class="close_box">
+              <article class="close-container">
+                <article class="leftright"></article>
+                <article class="rightleft"></article>
+              </article>
+            </article>
+          </section>
+        </div>
+        <div id="cont6">
+          <section class="content_main">
+            <h1>컨텐츠6</h1>
+            <article class="close_box">
+              <article class="close-container">
+                <article class="leftright"></article>
+                <article class="rightleft"></article>
+              </article>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/videoPanning.js"></script>
+    <script src="scripts/videoPlay.js"></script>
+  </div>
+</body>
+
 </html>

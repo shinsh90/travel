@@ -51,8 +51,8 @@
 
 .snip * {
 
-    -webkit-transition: all 0.4s ease-in;
-    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .snip img {
@@ -126,9 +126,9 @@
     content: '';
     background-color: #ffffff;
     z-index: 1;
-    -webkit-transition: all 0.4s ease-in;
-    transition: all 0.4s ease-in;
-    opacity: 0.8;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    opacity: 0.7;
 }
 
 .snip:before,
