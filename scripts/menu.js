@@ -45,13 +45,13 @@ $(function () {
 });
 
 $(function () {
-    $("#category_content_box div").hide(); // Initially hide all content
+    $("#category_content_box article").hide(); // Initially hide all content
     $("#category_menu li:first").attr("id", "current"); // Activate first tab
-    $("#category_content_box div:first").fadeIn(); // Show first tab content
+    $("#category_content_box article:first").fadeIn(); // Show first tab content
 
     $('#category_menu a').click(function (e) {
         e.preventDefault();
-        $("#category_content_box div").hide(); //Hide all content
+        $("#category_content_box article").hide(); //Hide all content
         $("#category_menu li").attr("id", ""); //Reset id's
         $(this).parent().attr("id", "current"); // Activate this
         $('#' + $(this).attr('title')).fadeIn(); // Show content for current tab
@@ -78,3 +78,46 @@ $(function () {
     });
 });
 //----------------------------------------------------
+
+//-------------------팝업-----------------------------
+
+$(function () {
+
+    $('#dateRangePicker').daterangepicker({
+
+        showDropdowns: true,
+        timePicker: true,
+        autoUpdateInput: false,
+        opens: 'right',
+        startDate: moment().startOf('hour'),
+        endDate: moment().startOf('hour').add(32, 'hour'),
+        locale: {
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            yearSuffix: '년',
+            applyLabel: '확인',
+            cancelLabel: '취소',
+            format: 'M/DD hh:mm A'
+        }
+    });
+
+    $('#dateRangePicker').on('apply.daterangepicker', function (ev, picker) {
+        $(this).val(picker.startDate.format('입실 : YYYY-MM-DD hh:mm A') + ' ~ ' + picker.endDate.format('퇴실 : YYYY-MM-DD hh:mm A'));
+    });
+
+    $('#dateRangePicker').on('cancel.daterangepicker', function (ev, picker) {
+        $(this).val('');
+    });
+
+});
+
+// 데이트레인지피커 팝업 // ------------------------------------
+
+$(function () {
+    $('select').niceSelect();
+});

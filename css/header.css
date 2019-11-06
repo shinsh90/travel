@@ -10,12 +10,11 @@ nav {
     background: #e5a248;
 }
 
-input {
+#search_top {
     color: #2A2E30;
     border: none;
     margin-top: 22px;
     background: #e5a248;
-    outline: none;
     transition: width 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0.5s;
 }
 

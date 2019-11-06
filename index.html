@@ -6,8 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>신승한</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/jquery.nice-select.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 </head>
 
 <body>
@@ -177,82 +185,93 @@
           </a>
         </li>
       </ul>
-      <div id="category_content_box">
-        <div id="cont1">
+      <section id="category_content_box">
+        <article id="cont1">
           <img src="images/room_bg.png" alt="숙소탭 배경" />
           <section class="content_main">
-            <h1>컨텐츠1</h1>
-            <article class="close_box">
-              <article class="close-container">
-                <article class="leftright"></article>
-                <article class="rightleft"></article>
-              </article>
-            </article>
+            <div class="room">
+              <input type="text" autocomplete="off" class="room_top" placeholder="도시, 지역, 구역 혹은 호텔명을 입력해주세요">
+              <input type="text" autocomplete="off" class="room_mid"  id="dateRangePicker" placeholder="날짜, 시간을 선택해주세요" data-bind="daterangepicker: dateRange, daterangepickerOptions: { maxDate: moment() }">
+              <select class="room_bot">
+                <option data-display="Select">객실수, 인원을 선택해주세요</option>
+                <option value="1">객실수 1 성인 1</option>
+                <option value="2">객실수 1 성인 2</option>
+                <option value="3">객실수 1 성인 3</option>
+                <option value="4">객실수 1 성인 4</option>
+              </select>
+              <a href="#" class="search_btn">
+                검색
+              </a>
+            </div>
+            <div class="close_box">
+                <div class="close-container">
+                  <div class="leftright"></div>
+                  <div class="rightleft"></div>
+                </div>
+              </div>
           </section>
-        </div>
-        <div id="cont2">
+          
+        </article>
+        <article id="cont2">
           <img src="images/airplane_bg.png" alt="항공권탭 배경" />
           <section class="content_main">
             <h1>컨텐츠2</h1>
-            <article class="close_box">
-              <article class="close-container">
-                <article class="leftright"></article>
-                <article class="rightleft"></article>
-              </article>
-            </article>
+            <div class="close_box">
+              <div class="close-container">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+              </div>
+            </div>
           </section>
-        </div>
-        <div id="cont3">
+        </article>
+        <article id="cont3">
           <img src="images/cruise_bg.png" alt="크루즈탭 배경" />
           <section class="content_main">
             <h1>컨텐츠3</h1>
-            <article class="close_box">
-              <article class="close-container">
-                <article class="leftright"></article>
-                <article class="rightleft"></article>
-              </article>
-            </article>
+            <div class="close_box">
+              <div class="close-container">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+              </div>
           </section>
-        </div>
-        <div id="cont4">
+        </article>
+        <article id="cont4">
           <section class="content_main">
             <h1>컨텐츠4</h1>
-            <article class="close_box">
-              <article class="close-container">
-                <article class="leftright"></article>
-                <article class="rightleft"></article>
-              </article>
-            </article>
+            <div class="close_box">
+              <div class="close-container">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+              </div>
+            </div>
           </section>
-        </div>
-        <div id="cont5">
+        </article>
+        <article id="cont5">
           <section class="content_main">
             <h1>컨텐츠5</h1>
-            <article class="close_box">
-              <article class="close-container">
-                <article class="leftright"></article>
-                <article class="rightleft"></article>
-              </article>
-            </article>
+            <div class="close_box">
+              <div class="close-container">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+              </div>
+            </div>
           </section>
-        </div>
-        <div id="cont6">
+        </article>
+        <article id="cont6">
           <section class="content_main">
             <h1>컨텐츠6</h1>
-            <article class="close_box">
-              <article class="close-container">
-                <article class="leftright"></article>
-                <article class="rightleft"></article>
-              </article>
-            </article>
+            <div class="close_box">
+              <div class="close-container">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+              </div>
+            </div>
           </section>
-        </div>
-      </div>
-    </section>
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/videoPanning.js"></script>
-    <script src="scripts/videoPlay.js"></script>
+        </article>
+      </section>
+      <script src="scripts/menu.js"></script>
+      <script src="scripts/videoPanning.js"></script>
+      <script src="scripts/videoPlay.js"></script>
   </div>
 </body>
 
