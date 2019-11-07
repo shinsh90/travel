@@ -88,7 +88,6 @@ $(function () {
         showDropdowns: true,
         timePicker: true,
         autoUpdateInput: false,
-        opens: 'right',
         startDate: moment().startOf('hour'),
         endDate: moment().startOf('hour').add(32, 'hour'),
         locale: {
@@ -120,4 +119,10 @@ $(function () {
 
 $(function () {
     $('select').niceSelect();
+});
+// 셀렉트박스 플러그인 //-------------------------------------------
+
+
+$(function () {
+    $("#calendar").zabuto_calendar();
 });

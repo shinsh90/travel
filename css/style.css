@@ -4,7 +4,7 @@
 @import "section.css";
 @import "recommend.css";
 @import "category.css";
-@import "nice-select.css";
+@import "footer.css";
 
 * {
     box-sizing: border-box;
@@ -25,7 +25,7 @@ a {
 
 hr {
     width: 1900px;
-    margin: 100px 0px;
+    margin: 150px 0px;
 }
 
 input {
@@ -35,4 +35,9 @@ input {
 .textColor {
     font-weight: 700;
     color: #e5a248;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1900px;
 }

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>신승한</title>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/nice-select.css">
+   <link rel="stylesheet" href="css/style.css" />
+<script src="scripts/jquery.nice-select.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="scripts/jquery.js"></script>
-  <script src="scripts/jquery.nice-select.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <script type="text/javascript" src="scripts/moment.min.js"></script>
+  <script type="text/javascript" src="scripts/daterangepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="scripts/zabuto_calendar.js"></script>
+<link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css">
 </head>
 
 <body>
@@ -191,9 +191,9 @@
           <section class="content_main">
             <div class="room">
               <input type="text" autocomplete="off" class="room_top" placeholder="도시, 지역, 구역 혹은 호텔명을 입력해주세요">
-              <input type="text" autocomplete="off" class="room_mid"  id="dateRangePicker" placeholder="날짜, 시간을 선택해주세요" data-bind="daterangepicker: dateRange, daterangepickerOptions: { maxDate: moment() }">
-              <select class="room_bot">
-                <option data-display="Select">객실수, 인원을 선택해주세요</option>
+              <input type="text" autocomplete="off" class="room_mid"  id="dateRangePicker" placeholder="날짜, 시간을 선택해주세요" data-bind="daterangepicker: dateRange, daterangepickerOptions: { maxDate: moment() }">     
+              <select class="selectpicker wide" >
+                <option data-display="객실수, 인원을 선택해주세요"></option>
                 <option value="1">객실수 1 성인 1</option>
                 <option value="2">객실수 1 성인 2</option>
                 <option value="3">객실수 1 성인 3</option>
@@ -203,6 +203,8 @@
                 검색
               </a>
             </div>
+            <span style="font-size: 13px; line-height: 18px; white-space: pre-wrap; background-color: rgb(255, 255, 255);">
+              <div id="calendar"></div></span>
             <div class="close_box">
                 <div class="close-container">
                   <div class="leftright"></div>
@@ -269,10 +271,42 @@
           </section>
         </article>
       </section>
-      <script src="scripts/menu.js"></script>
-      <script src="scripts/videoPanning.js"></script>
-      <script src="scripts/videoPlay.js"></script>
+    </section>
+    <hr>
+    <footer>
+      <div class="foot_a">
+        <h1>051-123-1234~5</h1>
+        <div class="foot_txt_a">
+        <p>Fax:051-123-1234</p>
+        <p>상담시간:AM 09:00 ~ PM 18:00</p>
+        <span><img src="images/footer_hr_a.png"></span>
+      </div>
+      <div class="sns_link">
+      <a href="https://ko-kr.facebook.com/FacebookKorea/"><img src="images/facebook_icon.png"></a>
+      <a href="https://twitter.com/?lang=ko"><img src="images/twitter_icon.png"></a>
+      <a href="https://www.youtube.com/"><img src="images/youtube_icon.png"></a>
+      <a href="https://www.instagram.com/?hl=ko"><img src="images/instagram_icon.png"></a>
+    </div>
+      </div>
+      <div class="foot_b">
+        <div class="foot_txt_b">
+        <p>서비스소개 · 이용약관 · 개인정보취급방침 · 이용안내 · 해외여행약관 · 광고제휴문의</p>
+        <span><img src="images/footer_hr_b.png"></span>
+        </div>
+        <div class="footer_logo"> 
+        <a href=""><img src="images/footer_logo.png"></a> 
+        </div>
+        <div class="foot_txt_c">
+          <p>상호 : (주)겟투어 | 대표 : 신승한 | 사업자등록번호 : 123-45-78910 | 관광사업자등록번호 : 제2019-1호</p>
+          <p>통신판매업신고 : 제2019-부산금정-0527호 | 영업보증보험·기획여행보증보험 가입 | 개인정보관리책임자:신승한(010-5430-5028 )</p>
+          <p>TEL : 051-123-1234 | FAX : 051-123-1234 | 주소: 부산시 금정구 남산로 7-1(남산동 105-2번지)</p>
+          <p>Copyright(s)2019 GETTOUR All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
   </div>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/videoPanning.js"></script>
+  <script src="scripts/videoPlay.js"></script>
 </body>
-
 </html>
