@@ -1,8 +1,7 @@
 .content {
     width: 1900px;
     height: 800px;
-    display: flex;
-
+    position: relative;
 }
 
 .content video {
@@ -11,7 +10,7 @@
     object-fit: fill;
 }
 
-.content>.img-pan-container>video {
+.content>.video-pan-container>video {
     width: 150%;
     height: 150%;
     opacity: 0;
@@ -19,18 +18,18 @@
     /*transition-property transition-duration transition-timing-function transition-delay*/
 }
 
-.content>.img-pan-container>video.loaded {
+.content>.video-pan-container>video.loaded {
     opacity: 1;
 }
 
-.img-pan-container,
-.img-pan-container>video {
+.video-pan-container,
+.video-pan-container>video {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.img-pan-container {
+.video-pan-container {
     position: relative;
     overflow: hidden;
     cursor: crosshair;
@@ -38,7 +37,7 @@
     width: 100%;
 }
 
-.img-pan-container>video {
+.video-pan-container>video {
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     transform: translateZ(0);
@@ -51,18 +50,18 @@
     position: absolute;
     z-index: 11;
     color: white;
-    top: 300px;
-    left: 150px;
+    top: 150px;
+    left: 120px;
     cursor: pointer;
     opacity: 0;
 }
 
 .tip h1 {
-    font-size: 55px;
+    font-size: 60px;
 }
 
 .tip p {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .comment {
@@ -104,7 +103,7 @@
         height: 50%;
     }
 
-    .content>.img-pan-container>video {
+    .content>.video-pan-container>video {
         width: 259%;
     }
 }

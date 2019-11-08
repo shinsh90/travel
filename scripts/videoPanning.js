@@ -14,7 +14,7 @@ $.fn.videoPanning = function () {
         if ($this.data("videoPanning")) return;
         $this.data("videoPanning", 1)
             //create markup
-            .wrap("<div class='img-pan-container' />")
+            .wrap("<div class='video-pan-container' />")
             .after("<div class='resize' style='position:absolute; width:auto; height:auto; top:0; right:0; bottom:0; left:0; margin:0; padding:0; overflow:hidden; visibility:hidden; z-index:-1'><iframe style='width:100%; height:0; border:0; visibility:visible; margin:0' /><iframe style='width:0; height:100%; border:0; visibility:visible; margin:0' /></div>")
             //image loaded fn
             .one("load loadstart", function () {

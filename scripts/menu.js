@@ -126,3 +126,5 @@ $(function () {
 $(function () {
     $("#calendar").zabuto_calendar();
 });
+
+location.href = "#tab1";

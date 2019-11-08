@@ -5,6 +5,7 @@
 @import "recommend.css";
 @import "category.css";
 @import "footer.css";
+@import "airplane.css";
 
 * {
     box-sizing: border-box;
