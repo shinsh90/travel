@@ -126,5 +126,33 @@ $(function () {
 $(function () {
     $("#calendar").zabuto_calendar();
 });
+// 달력 플러그인 // -------------------------------------------------
 
-location.href = "#tab1";
+$(function () {
+
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+
+    $("ul.air_tabs li").click(function () {
+        $("ul.air_tabs li").removeClass("active").css("color", "#777");
+        //$(this).addClass("active").css({"color": "darkred","font-weight": "bolder"});
+        $(this).addClass("active").css("color", "#2A2E30");
+        $(".tab_content").hide()
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn()
+    });
+});
+
+//작은 탭메뉴 // -------------------------------------------------------
+
+$(function () {
+    $("ul.way_tabs li").click(function () {
+        $("ul.way_tabs li").removeClass("clicked").css("background-color", "white").css("color", "#2A2E30");
+        $(this).addClass("clicked").css("background-color", "#2A2E30").css("color", "white");
+        if ($("ul.way_tabs li:first").hasClass("clicked")) {
+            $(".stab_content").fadeOut();
+        } else {
+            $(".stab_content").fadeIn();
+        }
+    });
+});
