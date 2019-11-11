@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>신승한</title>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="css/nice-select.css">
   <link rel="stylesheet" href="css/style.css" />
   <script src="scripts/jquery.nice-select.js"></script>
@@ -231,12 +233,12 @@
                   <div class="way_tab_wrap">
                     <ul class="way_tabs">
                       <li class="clicked" rel="stab_1">편도</li>
-                      <li rel="stab_2">왕복</li>
+                      <li class="show" rel="stab_2">왕복</li>
                     </ul>
                   </div>
-                  <div class="plane_select_wrap">
+                  <div class="plane_select_wrap_1">
                     <div class="plane_select_start">
-                      <select class="selectpicker wide ">
+                      <select class="selectpicker wide">
                         <option data-display="출발지"></option>
                         <option value="1">김포(GMP)</option>
                         <option value="2">인천국제공항(ICN)</option>
@@ -244,28 +246,153 @@
                         <option value="4">인천국제공항(ICN)</option>
                       </select>
                     </div>
-                    도착지 (셀렉트),가는날(달력) <div class="stab_content">오는날 (달력)</div>
+                    <div class="plane_select_start_2">
+                      <input class="plane_input_1" id="datepicker"type="text" autocomplete="off" placeholder="가는날">
+                    </div>
                   </div>
-                  <div>
-                    인원선택 셀렉트 박스 4개
+                  <div class="plane_select_wrap_2">
+                    <div class="plane_select_end">
+                      <select class="selectpicker wide">
+                        <option data-display="도착지"></option>
+                        <option value="1">김포(GMP)</option>
+                        <option value="2">인천국제공항(ICN)</option>
+                        <option value="3">김포(GMP)</option>
+                        <option value="4">인천국제공항(ICN)</option>
+                      </select>
                   </div>
+                  <div class="plane_select_end_2">
+                    <input class="plane_input_1" id="datepicker_2"type="text" autocomplete="off" placeholder="오는날">
+                  </div>
+                </div>
+                  <div class="small_selectbox_wrap">
+                    <div class="small_selectbox_1">
+                      <select class="selectpicker wide">
+                        <option data-display="성인 0명"></option>
+                        <option value="1">성인 1명</option>
+                        <option value="2">성인 2명</option>
+                        <option value="3">성인 3명</option>
+                        <option value="4">성인 4명</option>
+                      </select>
+                    </div>
+                    <div class="small_selectbox_2">
+                        <select class="selectpicker wide">
+                          <option data-display="소아 0명"></option>
+                          <option value="1">소아 1명</option>
+                          <option value="2">소아 2명</option>
+                          <option value="3">소아 3명</option>
+                          <option value="4">소아 4명</option>
+                        </select>
+                      </div>
+                      <div class="small_selectbox_3">
+                          <select class="selectpicker wide">
+                            <option data-display="유아 0명"></option>
+                            <option value="1">유아 1명</option>
+                            <option value="2">유아 2명</option>
+                            <option value="3">유아 3명</option>
+                            <option value="4">유아 4명</option>
+                          </select>
+                        </div>
+                        <div class="small_selectbox_4">
+                            <select class="selectpicker wide">
+                              <option data-display="일반석"></option>
+                              <option value="1">일반</option>
+                              <option value="2">프리미엄</option>
+                              <option value="3">비지니스</option>
+                              <option value="4">퍼스트</option>
+                            </select>
+                          </div>
+                  </div>
+                  <a href="#" class="search_btn_2">
+                      검색
+                    </a>
                 </div>
                 <div id="tab_2" class="tab_content">
                   <div>
                     <div class="way_tab_wrap">
                       <ul class="way_tabs">
                         <li class="clicked" rel="stab_1">편도</li>
-                        <li rel="stab_2">왕복</li>
+                        <li class="show" rel="stab_2">왕복</li>
                       </ul>
                     </div>
-                    <div>한국출발 해외출발(라디오 버튼)</div>
-                  </div>
-                  <div>
-                    출발지 (셀렉트),도착지 (셀렉트),가는날 (달력)<div class="stab_content">오는날 (달력)</div>
-                  </div>
-                  <div>
-                    인원선택 셀렉트 박스 4개
-                  </div>
+                    <div class="way_radioBox_wrap">
+                     <div class="radio-items">
+                      <input type="radio" id="itema" name="출발지"value="국내출발">
+                      <label for="itema">국내출발</label>
+                    </div>
+                    <div class="radio-items">
+                      <input type="radio" id="itemb" name="출발지"value="해외출발">
+                      <label for="itemb">해외출발</label>
+                    </div>
+                    </div>
+                    <div class="plane_select_wrap_1">
+                        <div class="plane_select_start">
+                          <select class="selectpicker wide">
+                            <option data-display="출발지"></option>
+                            <option value="1">김포(GMP)</option>
+                            <option value="2">인천국제공항(ICN)</option>
+                            <option value="3">김포(GMP)</option>
+                            <option value="4">인천국제공항(ICN)</option>
+                          </select>
+                        </div>
+                        <div class="plane_select_start_2">
+                          <input class="plane_input_1" id="datepicker_3"type="text" autocomplete="off" placeholder="가는날">
+                        </div>
+                      </div>
+                      <div class="plane_select_wrap_2">
+                          <div class="plane_select_end">
+                            <select class="selectpicker wide">
+                              <option data-display="도착지"></option>
+                              <option value="1">김포(GMP)</option>
+                              <option value="2">인천국제공항(ICN)</option>
+                              <option value="3">김포(GMP)</option>
+                              <option value="4">인천국제공항(ICN)</option>
+                            </select>
+                        </div>
+                        <div class="plane_select_end_2">
+                          <input class="plane_input_1" id="datepicker_4"type="text" autocomplete="off" placeholder="오는날">
+                        </div>
+                      </div>
+                        <div class="small_selectbox_wrap">
+                          <div class="small_selectbox_1">
+                            <select class="selectpicker wide">
+                              <option data-display="성인 0명"></option>
+                              <option value="1">성인 1명</option>
+                              <option value="2">성인 2명</option>
+                              <option value="3">성인 3명</option>
+                              <option value="4">성인 4명</option>
+                            </select>
+                          </div>
+                          <div class="small_selectbox_2">
+                              <select class="selectpicker wide">
+                                <option data-display="소아 0명"></option>
+                                <option value="1">소아 1명</option>
+                                <option value="2">소아 2명</option>
+                                <option value="3">소아 3명</option>
+                                <option value="4">소아 4명</option>
+                              </select>
+                            </div>
+                            <div class="small_selectbox_3">
+                                <select class="selectpicker wide">
+                                  <option data-display="유아 0명"></option>
+                                  <option value="1">유아 1명</option>
+                                  <option value="2">유아 2명</option>
+                                  <option value="3">유아 3명</option>
+                                  <option value="4">유아 4명</option>
+                                </select>
+                              </div>
+                              <div class="small_selectbox_4">
+                                  <select class="selectpicker wide">
+                                    <option data-display="일반석"></option>
+                                    <option value="1">일반</option>
+                                    <option value="2">프리미엄</option>
+                                    <option value="3">비지니스</option>
+                                    <option value="4">퍼스트</option>
+                                  </select>
+                                </div>
+                        </div>
+                        <a href="#" class="search_btn_2">
+                            검색
+                          </a>
                 </div>
               </div>
             </div>

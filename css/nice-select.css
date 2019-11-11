@@ -1,19 +1,14 @@
 .nice-select {
   -webkit-tap-highlight-color: transparent;
   background-color: #fff;
-  border: 0.7px solid black;
   box-sizing: border-box;
   cursor: pointer;
   display: block;
   font-family: inherit;
-  font-size: 14px;
-  font-weight: normal;
-  height: 50px;
-  line-height: 50px;
-  outline: none;
-  padding-top: 40px;
-  padding-left: 25px;
+  font-size: 18px;
   position: relative;
+  height: 100%;
+  outline: none;
   text-align: left !important;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -22,8 +17,16 @@
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  width: auto;
+  font-weight: 700;
+
 }
+
+.nice-select span {
+  position: absolute;
+  left: 4%;
+  top: 40%;
+}
+
 
 .nice-select:hover {
   border-color: rgba(0, 0, 0, 0.5);
@@ -40,11 +43,11 @@
   border-right: 4px solid #2A2E30;
   content: '';
   display: block;
-  height: 18px;
+  height: 14px;
   pointer-events: none;
   position: absolute;
-  right: 45px;
-  top: 50px;
+  right: 6%;
+  top: 38%;
   -webkit-transform-origin: 66% 66%;
   -ms-transform-origin: 66% 66%;
   transform-origin: 66% 66%;
@@ -53,7 +56,7 @@
   transform: rotate(45deg);
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
-  width: 18px;
+  width: 14px;
 }
 
 .nice-select.open:after {
@@ -118,7 +121,7 @@
   background-color: #fff;
   box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
   box-sizing: border-box;
-  margin-top: 4px;
+  margin-top: 1px;
   opacity: 0;
   overflow: hidden;
   padding: 0;
@@ -144,13 +147,11 @@
 .nice-select .option {
   cursor: pointer;
   font-weight: 400;
-  line-height: 40px;
   list-style: none;
-  min-height: 40px;
+  min-height: 60px;
   outline: none;
-  padding-left: 18px;
-  padding-right: 29px;
-  text-align: left;
+  line-height: 60px;
+  text-align: center;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -158,11 +159,14 @@
 .nice-select .option:hover,
 .nice-select .option.focus,
 .nice-select .option.selected.focus {
-  background-color: #f6f6f6;
+  background-color: rgba(217, 152, 50, 0.5);
 }
 
 .nice-select .option.selected {
   font-weight: bold;
+  background: url('/images/cheked_black.png');
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
 }
 
 .nice-select .option.disabled {

@@ -17,15 +17,17 @@
 
 .air_tab_cont {
     position: absolute;
-    top: 120px;
+    top: 130px;
     left: 60px;
+    width: 1200px;
 }
 
 .air_tabs li {
+    text-align: center;
+    width: 100px;
     color: #2A2E30;
     padding-bottom: 5px;
     cursor: pointer;
-    margin-right: 20px;
 }
 
 .air_tabs li.active {
@@ -33,10 +35,9 @@
 }
 
 .way_tab_wrap {
-
     line-height: 50px;
-    width: 300px;
-    height: 50px;
+    width: 350px;
+    height: 80px;
 }
 
 .way_tab_wrap .way_tabs {
@@ -46,7 +47,8 @@
 }
 
 .way_tab_wrap .way_tabs li {
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 500;
     cursor: pointer;
     width: 50%;
     text-align: center;
@@ -64,13 +66,205 @@
     background-position: 28% 50%;
 }
 
-.plane_select_wrap {
-    width: 550px;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.1);
+.plane_select_wrap_1 {
+    width: 582px;
+    height: 174px;
+}
+
+.plane_select_wrap_2 {
+    position: absolute;
+    right: 22px;
+    top: 90px;
+    width: 582px;
+    height: 174px;
 }
 
 .plane_select_start {
-    margin-top: 25px;
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #2A2E30;
 
+}
+
+.plane_select_start_2 {
+    margin-top: 15px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #2A2E30;
+}
+
+.plane_select_end {
+    border: 1px solid #2A2E30;
+    width: 100%;
+    height: 80px;
+}
+
+.plane_select_end_2 {
+    margin-top: 15px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #2A2E30;
+}
+
+.plane_input_1 {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: url('/images/calendar.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    height: 80px;
+    font-size: 18px;
+    padding-left: 22px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ui-datepicker {
+    font-size: 18px;
+    width: 350px;
+    height: 300px;
+    font-weight: 700;
+}
+
+.ui-datepicker-calendar {
+    height: 250px;
+}
+
+.ui-datepicker select.ui-datepicker-month {
+    margin-left: 10px;
+    width: 80px;
+    height: 30px;
+}
+
+.ui-datepicker select.ui-datepicker-year {
+    margin-right: 10px;
+    width: 40%;
+    height: 30px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+}
+
+.small_selectbox_wrap {
+    margin-top: 20px;
+    width: 700px;
+    display: flex;
+}
+
+.small_selectbox_1 {
+    padding: 0px 10px;
+    border: 1px solid;
+    width: 24%;
+    height: 80px;
+    margin-right: 14px;
+}
+
+.small_selectbox_2 {
+    padding: 0px 10px;
+    border: 1px solid;
+    width: 24%;
+    height: 80px;
+    margin-right: 14px;
+}
+
+.small_selectbox_3 {
+    padding: 0px 10px;
+    border: 1px solid;
+    width: 24%;
+    height: 80px;
+    margin-right: 14px;
+
+}
+
+.small_selectbox_4 {
+    padding: 0px 10px;
+    border: 1px solid;
+    width: 24%;
+    height: 80px;
+
+}
+
+.search_btn_2 {
+    position: absolute;
+    right: 22px;
+    bottom: -35px;
+    font-size: 22px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+    float: right;
+    color: white;
+    padding: 25px 80px;
+    background: #e5a248;
+
+}
+
+.search_btn_2:hover {
+    background-color: rgba(217, 152, 50, 0.5);
+    transition: 0.2s;
+}
+
+.way_radioBox_wrap {
+    position: absolute;
+    left: 380px;
+    top: 15px;
+}
+
+.way_radioBox_wrap input {
+    margin-right: 10px;
+}
+
+
+.radio-items {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px;
+    margin: 10px 0 0;
+}
+
+
+.radio-items input[type='radio'] {
+    display: none;
+}
+
+.radio-items label {
+    cursor: pointer;
+    color: #2A2E30;
+    font-weight: normal;
+}
+
+
+.radio-items label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 11px;
+    border: 2px solid #777;
+    background-color: transparent;
+}
+
+.radio-items input[type=radio]:checked+label:after {
+    border-radius: 11px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    content: " ";
+    display: block;
+    background: #e5a248;
 }

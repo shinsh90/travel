@@ -96,8 +96,20 @@
     outline: 0;
 }
 
+#category_menu:nth-child(1).arrow:before {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #e5a248;
+    content: " ";
+    position: absolute;
+    bottom: -15px;
+    left: 43%;
+    z-index: 1;
+}
 
-#category_menu li.current:after {
+#category_menu li.arrow:after {
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
