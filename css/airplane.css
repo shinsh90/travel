@@ -11,21 +11,20 @@
     display: flex;
     font-size: 1.4em;
     border-bottom: 1px solid #747d7f;
-    width: 85%;
+    width: 90%;
 }
-
 
 .air_tab_cont {
     position: absolute;
     top: 130px;
     left: 60px;
-    width: 1200px;
+    width: 1252px;
 }
 
 .air_tabs li {
     text-align: center;
     width: 100px;
-    color: #2A2E30;
+    color: #2a2e30;
     padding-bottom: 5px;
     cursor: pointer;
 }
@@ -42,7 +41,7 @@
 
 .way_tab_wrap .way_tabs {
     border-radius: 3px;
-    border: 2px solid #2A2E30;
+    border: 2px solid #2a2e30;
     display: flex;
 }
 
@@ -52,30 +51,28 @@
     cursor: pointer;
     width: 50%;
     text-align: center;
-
 }
 
 .way_tab_wrap .way_tabs li:first {
-    color: white;
-    background: #2A2E30;
+    background: #2a2e30;
 }
 
 .way_tabs li.clicked {
-    background: url('/images/cheked.png');
+    background: url("/images/cheked.png");
     background-repeat: no-repeat;
     background-position: 28% 50%;
 }
 
 .plane_select_wrap_1 {
-    width: 582px;
+    width: 618px;
     height: 174px;
 }
 
 .plane_select_wrap_2 {
     position: absolute;
-    right: 22px;
+    right: 0px;
     top: 90px;
-    width: 582px;
+    width: 618px;
     height: 174px;
 }
 
@@ -83,19 +80,18 @@
     margin-top: 10px;
     width: 100%;
     height: 80px;
-    border: 1px solid #2A2E30;
-
+    border: 1px solid #2a2e30;
 }
 
 .plane_select_start_2 {
     margin-top: 15px;
     width: 100%;
     height: 80px;
-    border: 1px solid #2A2E30;
+    border: 1px solid #2a2e30;
 }
 
 .plane_select_end {
-    border: 1px solid #2A2E30;
+    border: 1px solid #2a2e30;
     width: 100%;
     height: 80px;
 }
@@ -104,14 +100,14 @@
     margin-top: 15px;
     width: 100%;
     height: 80px;
-    border: 1px solid #2A2E30;
+    border: 1px solid #2a2e30;
 }
 
 .plane_input_1 {
     border: none;
     outline: none;
     width: 100%;
-    background: url('/images/calendar.png');
+    background: url("/images/calendar.png");
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: 95% 50%;
@@ -158,7 +154,7 @@ html .ui-button.ui-state-disabled:active {
 
 .small_selectbox_wrap {
     margin-top: 20px;
-    width: 700px;
+    width: 750px;
     display: flex;
 }
 
@@ -184,7 +180,6 @@ html .ui-button.ui-state-disabled:active {
     width: 24%;
     height: 80px;
     margin-right: 14px;
-
 }
 
 .small_selectbox_4 {
@@ -192,13 +187,12 @@ html .ui-button.ui-state-disabled:active {
     border: 1px solid;
     width: 24%;
     height: 80px;
-
 }
 
 .search_btn_2 {
     position: absolute;
-    right: 22px;
-    bottom: -35px;
+    right: 0px;
+    bottom: -72px;
     font-size: 22px;
     margin-top: 25px;
     letter-spacing: 1px;
@@ -206,7 +200,6 @@ html .ui-button.ui-state-disabled:active {
     color: white;
     padding: 25px 80px;
     background: #e5a248;
-
 }
 
 .search_btn_2:hover {
@@ -224,7 +217,6 @@ html .ui-button.ui-state-disabled:active {
     margin-right: 10px;
 }
 
-
 .radio-items {
     display: inline-block;
     position: relative;
@@ -232,17 +224,15 @@ html .ui-button.ui-state-disabled:active {
     margin: 10px 0 0;
 }
 
-
-.radio-items input[type='radio'] {
+.radio-items input[type="radio"] {
     display: none;
 }
 
 .radio-items label {
     cursor: pointer;
-    color: #2A2E30;
+    color: #2a2e30;
     font-weight: normal;
 }
-
 
 .radio-items label:before {
     content: " ";
@@ -257,7 +247,7 @@ html .ui-button.ui-state-disabled:active {
     background-color: transparent;
 }
 
-.radio-items input[type=radio]:checked+label:after {
+.radio-items input[type="radio"]:checked+label:after {
     border-radius: 11px;
     width: 12px;
     height: 12px;
@@ -267,4 +257,8 @@ html .ui-button.ui-state-disabled:active {
     content: " ";
     display: block;
     background: #e5a248;
+}
+
+.tab_content {
+    width: 1252px;
 }

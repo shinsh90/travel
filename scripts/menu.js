@@ -45,6 +45,12 @@ $(function () {
 });
 
 $(function () {
+
+    if ($(".arrow").removeClass('arrow')) {
+        {
+            $("#category_menu li:first").addClass('arrow');
+        }
+    }
     $("#category_content_box article").hide(); // Initially hide all content
     $("#category_menu li:first").attr("id", "current"); // Activate first tab
     $("#category_content_box article:first").fadeIn(); // Show first tab content
@@ -134,12 +140,14 @@ $(function () {
     $(".tab_content:first").show();
 
     $("ul.air_tabs li").click(function () {
+        // console.log($(this).children());
+        // $(this).children().removeClass("active").css("color", "#777");
         $("ul.air_tabs li").removeClass("active").css("color", "#777");
         //$(this).addClass("active").css({"color": "darkred","font-weight": "bolder"});
         $(this).addClass("active").css("color", "#2A2E30");
         $(".tab_content").hide()
         var activeTab = $(this).attr("rel");
-        $("#" + activeTab).fadeIn()
+        $("#" + activeTab).fadeIn();
     });
 });
 
@@ -147,7 +155,9 @@ $(function () {
 
 $(function () {
     $("ul.way_tabs li").click(function () {
-        $("ul.way_tabs li").removeClass("clicked").css("background-color", "white").css("color", "#2A2E30");
+        // $("ul.way_tabs li").removeClass("clicked").css("background-color", "white").css("color", "#2A2E30");
+        // console.log($(this).parent().children());
+        $(this).parent().children().removeClass("clicked").css("background-color", "white").css("color", "#2A2E30");
         $(this).addClass("clicked").css("background-color", "#2A2E30").css("color", "white");
         if ($(".show").hasClass("clicked")) {
             $(".plane_select_end_2").fadeIn();
@@ -155,6 +165,10 @@ $(function () {
             $(".plane_select_end_2").fadeOut();
         }
     });
+    // console.log($("ul.way_tabs:last"));
+    $("ul.way_tabs:first li:first, ul.way_tabs:last li:first").trigger("click");
+
+
 });
 $(function () {
     $.datepicker.setDefaults({
@@ -182,6 +196,7 @@ $(function () {
             ,
         maxDate: "+1M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)   
     });
+    $("#datepicker_5").datepicker();
     $("#datepicker_4").datepicker(
 
     );
@@ -197,3 +212,5 @@ $(function () {
 
 
 });
+//----------------------------------------------------------------------------------------
+

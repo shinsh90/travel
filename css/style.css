@@ -6,6 +6,8 @@
 @import "category.css";
 @import "footer.css";
 @import "airplane.css";
+@import "cruise.css";
+@import "product.css";
 
 * {
     box-sizing: border-box;
@@ -41,4 +43,4 @@ input {
 .container {
     margin: 0 auto;
     width: 1900px;
-}@import "airplane.css";
+}

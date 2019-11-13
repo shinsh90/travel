@@ -1,0 +1,90 @@
+.product_text_area {
+    border-bottom: 1px solid #2a2e30;
+}
+
+.product_text_area h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.product_slideBox {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.product_slideBox .product_itemBox {
+    position: relative;
+}
+
+.product_itemBox h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    padding: 15px 20px;
+    background: #2a2e30;
+}
+
+.product_slideBox img {
+    width: 300px;
+}
+
+.product_slideBox img:hover {
+    transition: 0.2s ease;
+    opacity: 0.7;
+
+}
+
+.product_priceBox {
+    width: 100%;
+    height: 100px;
+    background: #e5a248;
+}
+
+.product_priceBox h3 {
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.4em;
+}
+
+.product_priceBox p {
+    margin-left: 20px;
+    color: #2a2e30;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.product_priceBox img {
+    width: 26px;
+    margin-right: 10px;
+
+}
+
+.product_priceBox img:hover {
+    transition: 0.2s;
+    opacity: 0.7;
+
+}
+
+.product_icons {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+.price_line {
+    font-size: 17px;
+    margin-left: 10px;
+    color: #666;
+    text-decoration: line-through
+}
+
+.product_cart {
+    width: 28px;
+}
