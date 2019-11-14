@@ -8,6 +8,8 @@
 @import "airplane.css";
 @import "cruise.css";
 @import "product.css";
+@import "comunity.css";
+@import "event.css";
 
 * {
     box-sizing: border-box;

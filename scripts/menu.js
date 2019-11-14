@@ -30,7 +30,30 @@ $(".hover").mouseleave(
 $('#category_menu li').click(function () {
     $('.arrow').removeClass('arrow');
     $(this).addClass('arrow');
+
 });
+
+
+$(function () {
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+
 
 $(function () {
     $('#category_menu li').click(function () {
@@ -41,6 +64,7 @@ $(function () {
                 $(this).find('img').attr('src', $(this).find('img').attr('src').replace('_on', '_off'));
             }
         });
+
     });
 });
 
@@ -148,6 +172,7 @@ $(function () {
         $(".tab_content").hide()
         var activeTab = $(this).attr("rel");
         $("#" + activeTab).fadeIn();
+
     });
 });
 
@@ -214,3 +239,17 @@ $(function () {
 });
 //----------------------------------------------------------------------------------------
 
+var text = document.getElementById('text');
+var newDom = '';
+var animationDelay = 6;
+
+for (let i = 0; i < text.innerText.length; i++) {
+    newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i]) + '</span>';
+}
+
+text.innerHTML = newDom;
+var length = text.children.length;
+
+for (let i = 0; i < length; i++) {
+    text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+}
