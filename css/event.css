@@ -72,3 +72,49 @@
     width: 24%;
     height: 300px;
 }
+
+.event_ingBox a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.event_ingBox:hover {
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.event_ingBox h2 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
+.event_ingBox p {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    line-height: 1.2em;
+}
+
+.event_ingBox h3 {
+    left: 10%;
+    position: absolute;
+    bottom: -25%;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.event_ingBox h4 {
+    position: absolute;
+    left: 10%;
+    bottom: -37%;
+}
+
+
+#event_txt {
+    position: absolute;
+    top: 45%;
+}
