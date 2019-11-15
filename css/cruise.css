@@ -44,7 +44,7 @@
     outline: none;
     width: 600px;
     height: 80px;
-    background: url("/images/cruise_icon.png");
+    background: url("/travel/images/cruise_icon.png");
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 95% 50%;
@@ -86,7 +86,7 @@
     border: none;
     outline: none;
     width: 100%;
-    background: url("/images/calendar.png");
+    background: url("/travel/images/calendar.png");
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: 95% 50%;

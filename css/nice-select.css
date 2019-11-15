@@ -164,7 +164,7 @@
 
 .nice-select .option.selected {
   font-weight: bold;
-  background: url('/images/cheked_black.png');
+  background: url('/travel/images/cheked_black.png');
   background-repeat: no-repeat;
   background-position: 10% 50%;
 }

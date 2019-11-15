@@ -58,7 +58,7 @@
 }
 
 .way_tabs li.clicked {
-    background: url("/images/cheked.png");
+    background: url("/travel/images/cheked.png");
     background-repeat: no-repeat;
     background-position: 28% 50%;
 }
@@ -107,7 +107,7 @@
     border: none;
     outline: none;
     width: 100%;
-    background: url("/images/calendar.png");
+    background: url("/travel/images/calendar.png");
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: 95% 50%;
