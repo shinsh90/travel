@@ -1,5 +1,5 @@
 .content {
-    width: 1900px;
+    width: 100%;
     height: 800px;
     position: relative;
 }
@@ -98,15 +98,6 @@
 }
 
 
-@media (max-width: 992px) {
-    .content {
-        height: 50%;
-    }
-
-    .content>.video-pan-container>video {
-        width: 259%;
-    }
-}
 
 .lt0 {
     fill: #D99832;

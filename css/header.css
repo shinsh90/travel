@@ -57,7 +57,7 @@ nav {
 .menu li {
     height: 130px;
     width: 13%;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
 }
 
 .menu li a {
@@ -74,7 +74,7 @@ nav {
     position: absolute;
     right: 0;
     top: 55%;
-    font-size: 0.9vw;
+    font-size: 2vh;
 }
 
 .submenu li {

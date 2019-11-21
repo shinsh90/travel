@@ -285,3 +285,21 @@ function hasScrolled() {
     }
     lastScrollTop = st;
 }
+
+//-----------------------------------------------------------------------------------
+
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('.scroll__top').fadeIn();
+        } else {
+            $('.scroll__top').fadeOut();
+        }
+    });
+    $('.scroll__top').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});

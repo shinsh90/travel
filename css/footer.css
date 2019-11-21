@@ -1,5 +1,5 @@
 footer {
-    width: 1900px;
+    width: 100%;
 }
 
 .foot_a {
@@ -32,7 +32,7 @@ footer {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
+    width: 16%;
     display: flex;
     padding-top: 20px;
     justify-content: space-between;
@@ -48,7 +48,7 @@ footer {
 .foot_txt_b {
     padding-top: 50px;
     color: #2a2e30;
-    font-size: 1.4em;
+    font-size: 2.5vh;
 }
 
 .foot_txt_b p {
