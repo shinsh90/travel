@@ -10,6 +10,7 @@
 @import "product.css";
 @import "comunity.css";
 @import "event.css";
+@import "max-500px.css"(max-width:500px);
 
 *,
 *:after,
