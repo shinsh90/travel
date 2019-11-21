@@ -5,27 +5,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>신승한</title>
+  <title>여행 홈페이지</title>
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" media="(max-width: 500px)" href="css/max-500px.css">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/nice-select.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+  <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css">
+  <!-- <link rel="stylesheet" media="(max-width: 500px)" href="max-500px.css"> -->
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" type="text/css" href="css/nice-select.css">
-  <link rel="stylesheet" href="css/style.css" />
   <script src="scripts/jquery.nice-select.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <script type="text/javascript" src="scripts/moment.min.js"></script>
   <script type="text/javascript" src="scripts/daterangepicker.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
   <script src="scripts/zabuto_calendar.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css">
   <script src="scripts/swiper.js"></script>
-  <link rel="stylesheet" href="css/swiper.css">
 </head>
 
 <body>
@@ -37,7 +39,7 @@
           <svg version="1.1" x="0px" y="0px" viewBox="0 0 200 130" style="enable-background:new 0 0 200 130;"
             xml:space="preserve">
             <rect x="0.1" y="0.2" class="st0" width="200" height="135" />
-            <g>
+            <g class="logo_svg">
               <path class="st1"
                 d="M103.8,22.5c1.7-0.8,3.3-1.8,5-2.4c7.1-2.4,15.2,1.1,18.1,7.9c0.2,0.6,0.5,0.8,1.2,0.9
 		                        c10.9,1.5,18.5,13.9,10.6,24.5c-3.4,4.6-8.2,6.9-14.1,6.9c-16.5,0-33,0-49.6,0c-12.7,0-20.7-13.4-14.4-24c1.9-3.2,4.7-5.4,8.3-6.6
@@ -56,11 +58,11 @@
         </a>
       </div>
       <nav>
-        <ul class="menu">
-          <li><a href="#">여행지</a></li>
-          <li><a href="#">테마여행</a></li>
-          <li><a href="#">가이드</a></li>
-          <li><a href="#">Q&A</a></li>
+        <ul class="menu cl-effect-1">
+          <li class="menu_effectBox"><a href="#">여행지</a></li>
+          <li class="menu_effectBox"><a href="#">테마여행</a></li>
+          <li class="menu_effectBox"><a href="#">가이드</a></li>
+          <li class="menu_effectBox"><a href="#">Q&A</a></li>
         </ul>
         <div class="holder">
           <span class="magnifying-glass"><input type="text" id="search_top" /><i
@@ -74,6 +76,7 @@
       </nav>
     </header>
     <!-- 헤더 끝 -->
+    <div class="fixed_fix"></div>
     <section class="content">
       <video id="myVideo" autoplay="" loop="">
         <source src="images/train.mp4" type="video/mp4" />
@@ -88,64 +91,76 @@
       </div>
     </section>
     <hr />
+    <div class="textArea">
+      <img src="images/nav.png" alt="추천 여행지 아이콘" />
+      <p>Get tour <span class="textColor">추천 여행지</span></p>
+    </div>
     <section class="recommend">
-      <div class="textArea">
-        <img src="images/nav.png" alt="추천 여행지 아이콘" />
-        <p>Get tour <span class="textColor">추천 여행지</span></p>
-      </div>
       <div class="imagesArea">
         <figure class="snip">
-          <img src="images/denmark.jpg" alt="덴마크" />
-          <figcaption>
-            <p>덴마크</p>
-          </figcaption>
-          <a href="#"></a>
+          <div class="image_box">
+            <img src="images/denmark.jpg" alt="덴마크" />
+            <figcaption>
+              <p>덴마크</p>
+            </figcaption>
+            <a href="#"></a>
+          </div>
         </figure>
         <figure class="snip">
-          <img src="images/france.jpg" alt="프랑스" />
-          <figcaption>
-            <p>프랑스</p>
-          </figcaption>
-          <a href="#"></a>
+          <div class="image_box">
+            <img src="images/france.jpg" alt="프랑스" />
+            <figcaption>
+              <p>프랑스</p>
+            </figcaption>
+            <a href="#"></a>
+          </div>
         </figure>
         <figure class="snip">
-          <img src="images/malaysia.jpg" alt="말레이시아" />
-          <figcaption>
-            <p>말레이시아</p>
-          </figcaption>
-          <a href="#"></a>
+          <div class="image_box">
+            <img src="images/malaysia.jpg" alt="말레이시아" />
+            <figcaption>
+              <p>말레이시아</p>
+            </figcaption>
+            <a href="#"></a>
+          </div>
         </figure>
         <figure class="snip">
-          <img src="images/kyrgyzstan.jpg" alt="키르기스스탄" />
-          <figcaption>
-            <p>키르기스스탄</p>
-          </figcaption>
-          <a href="#"></a>
+          <div class="image_box">
+            <img src="images/kyrgyzstan.jpg" alt="키르기스스탄" />
+            <figcaption>
+              <p>키르기스스탄</p>
+            </figcaption>
+            <a href="#"></a>
+          </div>
         </figure>
         <figure class="snip">
-          <img src="images/swis.jpg" alt="스위스" />
-          <figcaption>
-            <p>스위스</p>
-          </figcaption>
-          <a href="#"></a>
+          <div class="image_box">
+            <img src="images/swis.jpg" alt="스위스" />
+            <figcaption>
+              <p>스위스</p>
+            </figcaption>
+            <a href="#"></a>
+          </div>
         </figure>
         <figure class="snip">
-          <img src="images/japan.jpg" alt="일본" />
-          <figcaption>
-            <p>일본</p>
-          </figcaption>
-          <a href="#"></a>
+          <div class="image_box">
+            <img src="images/japan.jpg" alt="일본" />
+            <figcaption>
+              <p>일본</p>
+            </figcaption>
+            <a href="#"></a>
+          </div>
         </figure>
       </div>
     </section>
 
     <hr />
-
+    <div class="textArea_c">
+      <img src="images/contents.png" alt="카테고리 아이콘" />
+      <p>Get tour <span class=" textColor">카테고리</span></p>
+    </div>
     <section class="category">
-      <div class="textArea_c">
-        <img src="images/contents.png" alt="카테고리 아이콘" />
-        <p>Get tour <span class=" textColor">카테고리</span></p>
-      </div>
+
       <ul id="category_menu">
         <li class="category_menu_tabbtn">
           <a href="#" title="tab1">

@@ -253,3 +253,35 @@ var length = text.children.length;
 for (let i = 0; i < length; i++) {
     text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
 }
+
+//--------------------------------------------------------------------------------------
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function (event) {
+    didScroll = true;
+});
+
+setInterval(function () {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    if (Math.abs(lastScrollTop - st) <= delta) return;
+    if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down 
+        $('header').removeClass('header_down').addClass('header_up');
+    } else { // Scroll Up 
+        if (st + $(window).height() < $(document).height()) {
+            $('header').removeClass('header_up').addClass('header_down');
+        }
+    }
+    lastScrollTop = st;
+}
