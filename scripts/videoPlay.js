@@ -30,7 +30,7 @@ $(function () {
             // console.log(Math.floor(myVideo.currentTime));
             if (Math.floor(myVideo.currentTime) == 0) {
                 showTip($(".tip"), 5, 15);
-                showTip($(".tip2"), 15, 25);
+                // showTip($(".tip2"), 15, 25);
             }
         }, 1000);
     });
@@ -39,8 +39,10 @@ $(function () {
         setTimeout(function () {
             obj.animate({
                 opacity: 1,
-                top: "-=50px"
-            }, 500, "linear");
+                // top: "-=50px"
+            }, 500, "linear", function () {
+                $(this).fadeIn();
+            });
         }, start * 1000);
 
         obj.on("mouseenter", function () {
@@ -55,8 +57,10 @@ $(function () {
         setTimeout(function () {
             obj.animate({
                 opacity: 0,
-                top: "+=50px"
-            }, 500, "linear");
+                // top: "+=50px"
+            }, 500, "linear", function () {
+                $(this).fadeOut();
+            });
         }, (start + end) * 1000);
     }
 });

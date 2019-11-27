@@ -54,6 +54,7 @@
     left: 120px;
     cursor: pointer;
     opacity: 0;
+    display: none;
 }
 
 .tip h1 {

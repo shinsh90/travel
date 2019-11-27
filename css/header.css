@@ -23,13 +23,13 @@ nav {
     transition: width 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0.5s;
 }
 
-
 .logo {
     width: 200px;
     height: 130px;
-    background: #2a2e30;
+}
 
-
+svg {
+    height: 100%;
 }
 
 .st0 {
@@ -57,7 +57,7 @@ nav {
 .menu li {
     height: 130px;
     width: 13%;
-    font-size: 1.4vw;
+    font-size: 1.3em;
 }
 
 .menu li a {

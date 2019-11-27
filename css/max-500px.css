@@ -1,0 +1,152 @@
+header {
+    width: 100%;
+    display: flex;
+}
+
+nav {
+    display: none;
+}
+
+.content {
+    display: none;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background: #2A2E30;
+}
+
+svg {
+    width: 100px;
+}
+
+.mini_header {
+    width: 100%;
+    height: 100px;
+    background: #e5a248;
+}
+
+.hamburger-button {
+    position: absolute;
+    transition: .3s ease-in-out;
+    width: 45px;
+    height: 34px;
+    display: block;
+    top: 2rem;
+    right: 2rem;
+    z-index: 100;
+}
+
+.hamburger-button span {
+    position: absolute;
+    height: 6px;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #2A2E30;
+    top: 0;
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.hamburger-button span:nth-child(1) {
+    top: 0px;
+}
+
+.hamburger-button span:nth-child(2),
+.hamburger-button span:nth-child(3) {
+    top: 13px;
+}
+
+.hamburger-button span:nth-child(4) {
+    top: 26px;
+}
+
+.hamburger-button.active span {
+    background-color: #FFF;
+}
+
+.hamburger-button.active span:nth-child(1),
+.hamburger-button.active span:nth-child(4) {
+    opacity: 0;
+}
+
+.hamburger-button.active span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.hamburger-button.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.cls-1 {
+    isolation: isolate;
+}
+
+.cls-2 {
+    fill: #70b0fc;
+}
+
+.cls-3,
+.cls-7 {
+    fill: #4b86b7;
+}
+
+.cls-3,
+.cls-4 {
+    fill-rule: evenodd;
+}
+
+.cls-4,
+.cls-6 {
+    fill: #2b7ea3;
+}
+
+.cls-10,
+.cls-4,
+.cls-6 {
+    opacity: 0.75;
+}
+
+.cls-5 {
+    opacity: 0.7;
+}
+
+.cls-12,
+.cls-14,
+.cls-8 {
+    fill: #fff;
+}
+
+.cls-9 {
+    fill: #d0f3fb;
+}
+
+.cls-10 {
+    fill: #288199;
+}
+
+.cls-11 {
+    fill: #f39c12;
+}
+
+.cls-12 {
+    opacity: 0.2;
+}
+
+.cls-13 {
+    fill: #eed9ca;
+    mix-blend-mode: multiply;
+}
+
+.cls-14 {
+    opacity: 0.5;
+}
+
+.cls-15,
+.cls-16 {
+    fill: #efe59a;
+}
+
+.cls-15 {
+    opacity: 0.25;
+}
