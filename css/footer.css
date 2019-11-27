@@ -38,6 +38,11 @@ footer {
     justify-content: space-between;
 }
 
+.sns_link img:hover {
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
 .foot_b {
     text-align: center;
     width: 100%;
