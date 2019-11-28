@@ -313,4 +313,6 @@ $(function () {
         $(this).toggleClass('active');
 
     });
+    var scene = document.getElementById("scene");
+    var para = new Parallax(scene, {});
 });

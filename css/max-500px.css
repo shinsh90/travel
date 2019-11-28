@@ -7,8 +7,20 @@ nav {
     display: none;
 }
 
+.category {
+    display: none;
+}
+
 .content {
     display: none;
+}
+
+hr {
+    display: none;
+}
+
+.fixed_fix {
+    height: 100px;
 }
 
 .logo {
@@ -17,7 +29,7 @@ nav {
     background: #2A2E30;
 }
 
-svg {
+#svg_1 {
     width: 100px;
 }
 
@@ -76,6 +88,10 @@ svg {
 
 .hamburger-button.active span:nth-child(3) {
     transform: rotate(-45deg);
+}
+
+.svg_2 {
+    width: 100%;
 }
 
 .cls-1 {
@@ -149,4 +165,58 @@ svg {
 
 .cls-15 {
     opacity: 0.25;
+}
+
+.svg_2 {
+    display: block;
+    width: 100%;
+}
+
+.textArea {
+    margin-top: 30px;
+}
+
+.textArea img {
+    width: 25px;
+    height: 40px;
+}
+
+.textColor {
+    font-weight: 700;
+    color: #e5a248;
+}
+
+.textArea p {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.recommend {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.snip {
+    width: 45%;
+    height: auto;
+}
+
+.textArea_c {
+    margin-top: 30px;
+}
+
+.textArea_c img {
+    width: 45px;
+    height: 40px;
+}
+
+.textArea_c p {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 24px;
 }
