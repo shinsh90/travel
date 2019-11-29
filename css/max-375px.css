@@ -234,25 +234,25 @@ hr {
     font-size: 13px;
 }
 
-#wheel {
-    animation: wheel 15s linear infinite;
+.wheel {
+    animation: wheel 77s linear infinite;
     transform-box: fill-box;
     transform-origin: center;
 }
 
-#sun {
+.sun {
     animation: bounce 3s linear infinite;
 }
 
-#cloud1 {
+.cloud1 {
     animation: cloud 9s linear infinite;
 }
 
-#cloud2 {
+.cloud2 {
     animation: cloud2 12s linear infinite;
 }
 
-#cloud3 {
+.cloud3 {
     animation: cloud 7s linear infinite;
 }
 
