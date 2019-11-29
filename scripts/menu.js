@@ -316,3 +316,13 @@ $(function () {
     var scene = document.getElementById("scene");
     var para = new Parallax(scene, {});
 });
+
+//-----------------------------------------------------------------------
+// $(".plane").hide();
+
+$(document).ready(function () {
+    $(".plane").animate({
+        top: "100px"
+    }, 1000);
+
+});
