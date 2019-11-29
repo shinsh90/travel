@@ -256,6 +256,10 @@ hr {
     animation: cloud 7s linear infinite;
 }
 
+.plane {
+    animation: plane 10s linear infinite;
+}
+
 footer {
     display: none;
 }
@@ -278,7 +282,7 @@ footer {
     }
 
     20% {
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
 
 }
@@ -321,4 +325,13 @@ footer {
     }
 
 
+}
+@keyframes plane {
+    0%,
+    100%{
+        transform: translateX(10px) translateY(10px);
+    }
+    50% {
+        transform: translateX(20px) translateY(20px);
+    }
 }
