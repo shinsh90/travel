@@ -1,6 +1,5 @@
 header {
-    width: 100%;
-    display: flex;
+    width: 375px;
 }
 
 nav {
@@ -42,8 +41,8 @@ hr {
 .hamburger-button {
     position: absolute;
     transition: .3s ease-in-out;
-    width: 45px;
-    height: 34px;
+    width: 40px;
+    height: 30px;
     display: block;
     top: 2rem;
     right: 2rem;
@@ -90,10 +89,6 @@ hr {
     transform: rotate(-45deg);
 }
 
-.svg_2 {
-    width: 100%;
-}
-
 .cls-1 {
     isolation: isolate;
 }
@@ -103,32 +98,32 @@ hr {
 }
 
 .cls-3,
+.cls-5 {
+    fill: #2b7ea3;
+}
+
+.cls-3,
+.cls-6 {
+    fill-rule: evenodd;
+}
+
+.cls-10,
+.cls-3,
+.cls-5 {
+    opacity: 0.75;
+}
+
+.cls-4 {
+    opacity: 0.7;
+}
+
+.cls-6,
 .cls-7 {
     fill: #4b86b7;
 }
 
-.cls-3,
-.cls-4 {
-    fill-rule: evenodd;
-}
-
-.cls-4,
-.cls-6 {
-    fill: #2b7ea3;
-}
-
-.cls-10,
-.cls-4,
-.cls-6 {
-    opacity: 0.75;
-}
-
-.cls-5 {
-    opacity: 0.7;
-}
-
 .cls-12,
-.cls-14,
+.cls-16,
 .cls-8 {
     fill: #fff;
 }
@@ -154,31 +149,42 @@ hr {
     mix-blend-mode: multiply;
 }
 
-.cls-14 {
-    opacity: 0.5;
-}
-
-.cls-15,
-.cls-16 {
+.cls-14,
+.cls-15 {
     fill: #efe59a;
 }
 
-.cls-15 {
+.cls-14 {
     opacity: 0.25;
+}
+
+.cls-16,
+.cls-17 {
+    opacity: 0.5;
 }
 
 .svg_2 {
     display: block;
+
+}
+
+.svg_2 li {
     width: 100%;
+    height: 100%;
 }
 
 .textArea {
     margin-top: 30px;
 }
 
+
 .textArea img {
     width: 25px;
     height: 40px;
+}
+
+.imagesArea {
+    width: 96%;
 }
 
 .textColor {
@@ -189,7 +195,7 @@ hr {
 .textArea p {
     margin-top: 15px;
     margin-left: 10px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .recommend {
@@ -201,8 +207,10 @@ hr {
     margin-top: 35px;
 }
 
+
+
 .snip {
-    width: 45%;
+    width: 44%;
     height: auto;
 }
 
@@ -218,5 +226,9 @@ hr {
 .textArea_c p {
     margin-top: 15px;
     margin-left: 10px;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+footer {
+    display: none;
 }

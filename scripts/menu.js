@@ -239,7 +239,7 @@ $(function () {
 });
 //----------------------------------------------------------------------------------------
 
-var text = document.getElementById('text');
+var text = document.querySelector('.text');
 var newDom = '';
 var animationDelay = 6;
 
