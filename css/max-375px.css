@@ -245,7 +245,7 @@ hr {
 }
 
 .cloud1 {
-    animation: cloud 9s linear infinite;
+    animation: cloud 7s linear infinite;
 }
 
 .cloud2 {
@@ -325,13 +325,4 @@ footer {
     }
 
 
-}
-@keyframes plane {
-    0%,
-    100%{
-        transform: translateX(10px) translateY(10px);
-    }
-    50% {
-        transform: translateX(20px) translateY(20px);
-    }
 }
