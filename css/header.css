@@ -10,7 +10,7 @@ header {
 nav {
     color: white;
     position: relative;
-    width: 1700px;
+    width: 100%;
     height: 130px;
     background: #e5a248;
 }
@@ -57,7 +57,7 @@ svg {
 .menu li {
     height: 130px;
     width: 13%;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .menu li a {
@@ -156,12 +156,8 @@ svg {
 
     50% {
         opacity: 1;
-        transform: rotate(7deg) scale(1.05);
-    }
-
-    70% {
-        opacity: 1;
-        transform: rotate(-7deg) scale(1.05);
+        transform: scale(1.1);
+        transform-box: fill-box;
     }
 
     100% {

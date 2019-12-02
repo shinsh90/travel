@@ -61,6 +61,6 @@ $(function () {
             }, 500, "linear", function () {
                 $(this).fadeOut();
             });
-        }, (start + end) * 1000);
+        }, end * 1000);
     }
 });

@@ -95,7 +95,7 @@ $(function () {
         $(this)
             .parent()
             .attr("id", "current"); // Activate this
-        $("#" + $(this).attr("title")).fadeIn(); // Show content for current tab
+        // $("#" + $(this).attr("title")).fadeIn(); // Show content for current tab
         switch ($(this).attr("title")) {
             case "tab1":
                 $("#cont1").fadeIn();
@@ -189,13 +189,9 @@ $(function () {
 
 $(function () {
     $("select").niceSelect();
-});
-// 셀렉트박스 플러그인 //-------------------------------------------
-
-$(function () {
     $("#calendar").zabuto_calendar();
 });
-// 달력 플러그인 // -------------------------------------------------
+
 
 $(function () {
     $(".tab_content").hide();

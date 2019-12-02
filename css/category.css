@@ -8,6 +8,7 @@
 }
 
 .textArea_c {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
@@ -91,6 +92,7 @@
     bottom: -15px;
     left: 43%;
     z-index: 1;
+
 }
 
 #category_menu li.arrow:after {
@@ -104,6 +106,7 @@
     bottom: -15px;
     left: 43%;
     z-index: 1;
+
 }
 
 .category_menu_tabbtn .tabbtn_icons {
@@ -134,11 +137,11 @@
 
 .content_main {
     position: absolute;
-    left: 48.8%;
+    left: 50%;
     top: 53.5%;
     transform: translate(-50%, -50%);
     background: white;
-    width: 1391px;
+    width: 1428px;
     height: 640px;
 }
 
