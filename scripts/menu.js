@@ -321,8 +321,10 @@ $(function () {
 // $(".plane").hide();
 
 $(document).ready(function () {
-    $(".plane").animate({
-        top: "100px"
-    }, 1000);
+    TweenMax.to("plane", {
+        duration: 1,
+        rotation: 360,
+        transformOrigin: "50% 50%"
+    });
 
 });
