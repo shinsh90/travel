@@ -234,26 +234,30 @@ hr {
     font-size: 13px;
 }
 
-#wheel {
-    animation: wheel 15s linear infinite;
+.wheel {
+    animation: wheel 77s linear infinite;
     transform-box: fill-box;
     transform-origin: center;
 }
 
-#sun {
+.sun {
     animation: bounce 3s linear infinite;
 }
 
-#cloud1 {
+.cloud1 {
     animation: cloud 9s linear infinite;
 }
 
-#cloud2 {
+.cloud2 {
     animation: cloud2 12s linear infinite;
 }
 
-#cloud3 {
+.cloud3 {
     animation: cloud 7s linear infinite;
+}
+
+.plane {
+    animation: plane 10s linear infinite;
 }
 
 footer {
@@ -278,7 +282,7 @@ footer {
     }
 
     20% {
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
 
 }
@@ -321,4 +325,13 @@ footer {
     }
 
 
+}
+@keyframes plane {
+    0%,
+    100%{
+        transform: translateX(10px) translateY(10px);
+    }
+    50% {
+        transform: translateX(20px) translateY(20px);
+    }
 }
