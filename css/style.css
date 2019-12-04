@@ -51,9 +51,11 @@ input {
     width: 100%;
 }
 
-.svg_2 {
+.svg_2,
+.tlt {
     display: none;
 }
+
 
 nav a {
     display: inline-block;

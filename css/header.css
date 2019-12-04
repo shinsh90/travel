@@ -1,166 +1,165 @@
 header {
-    position: fixed;
-    top: 0;
-    display: flex;
-    width: 100%;
-    z-index: 500;
-    transition: top 0.2s ease-in-out;
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  z-index: 500;
+  transition: top 0.2s ease-in-out;
 }
 
 nav {
-    color: white;
-    position: relative;
-    width: 100%;
-    height: 130px;
-    background: #e5a248;
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 130px;
+  background: #e5a248;
 }
 
 #search_top {
-    color: #2A2E30;
-    border: none;
-    margin-top: 22px;
-    background: #e5a248;
-    transition: width 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0.5s;
+  color: #2a2e30;
+  border: none;
+  margin-top: 22px;
+  background: #e5a248;
+  transition: width 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0.5s;
 }
 
 .logo {
-    width: 200px;
-    height: 130px;
+  width: 200px;
+  height: 130px;
 }
 
 svg {
-    height: 100%;
+  height: 100%;
 }
 
 .st0 {
-    fill: #2A2E30;
+  fill: #2a2e30;
 }
 
 .st1 {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .st2 {
-    font-family: 'MicrosoftSansSerif';
+  font-family: "MicrosoftSansSerif";
 }
 
 .st3 {
-    font-size: 20.2908px;
+  font-size: 20.2908px;
 }
 
 .menu {
-    text-align: center;
-    display: flex;
-    line-height: 130px;
+  text-align: center;
+  display: flex;
+  line-height: 130px;
 }
 
 .menu li {
-    height: 130px;
-    width: 13%;
-    font-size: 1.4em;
+  height: 130px;
+  width: 13%;
+  font-size: 1.4em;
 }
 
 .menu li a {
-    display: block;
+  display: block;
 }
 
 .menu li a:hover {
-    transition: 0.5s;
-    color: #2A2E30;
+  transition: 0.5s;
+  color: #2a2e30;
 }
 
 .submenu {
-    display: flex;
-    position: absolute;
-    right: 0;
-    top: 55%;
-    font-size: 2vh;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 55%;
+  font-size: 2vh;
 }
 
 .submenu li {
-    color: #2a2e30;
-    margin-right: 75px;
+  color: #2a2e30;
+  margin-right: 75px;
 }
 
 .submenu li a {
-    padding: 10px;
+  padding: 10px;
 }
 
 .submenu li a:hover {
-    transition: 0.5s;
-    color: #FFFFFF;
+  transition: 0.5s;
+  color: #ffffff;
 }
 
 .holder {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    margin: -4px 0 0 8px;
-    width: 0;
-    border-bottom: 2.5px solid white;
-    height: 45px;
-    cursor: pointer;
-    transition: width 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  margin: -4px 0 0 8px;
+  width: 0;
+  border-bottom: 2.5px solid white;
+  height: 45px;
+  cursor: pointer;
+  transition: width 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0.5s;
 }
 
 .holder:hover {
-    transition: 0.5s;
-    color: #2a2e30;
+  transition: 0.5s;
+  color: #2a2e30;
 }
 
 .holder.active {
-    width: 200px;
+  width: 200px;
 }
 
 .holder.active i.material-icons {
-    right: -8px;
+  right: -8px;
 }
 
 .holder i.material-icons {
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    text-align: center;
-    position: absolute;
-    top: auto;
-    right: -13px;
-    bottom: -1px;
-    left: auto;
-    font-size: 38px;
-    transition: right .3s linear .7s;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  position: absolute;
+  top: auto;
+  right: -13px;
+  bottom: -1px;
+  left: auto;
+  font-size: 38px;
+  transition: right 0.3s linear 0.7s;
 }
 
 .header_up {
-    top: -130px;
+  top: -130px;
 }
 
 .fixed_fix {
-    width: 100%;
-    height: 130px;
+  width: 100%;
+  height: 130px;
 }
 
 .menu_effectBox {
-    position: relative;
+  position: relative;
 }
 
-
 .logo_svg:hover {
-    transform-origin: 50% 50%;
-    animation: bounceIn 1.5s infinite;
+  transform-origin: 50% 50%;
+  animation: bounceIn 2s infinite;
 }
 
 @keyframes bounceIn {
-    0% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0.2;
+  }
 
-    50% {
-        opacity: 1;
-        transform: scale(1.1);
-        transform-box: fill-box;
-    }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+    transform-box: fill-box;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
