@@ -259,7 +259,7 @@ hr {
 }
 
 .textArea_c {
-  margin-top: 30px;
+  margin: 30px 0px;
 }
 
 .textArea_c img {
@@ -328,16 +328,16 @@ footer {
   }
 
   25% {
-    transform: translateY(-5px);
+    transform: translateY(-2.5px);
   }
 
   50% {
-    transform: translateY(-10px) scale(1.1);
+    transform: translateY(-5px) scale(1.1);
     transform-box: fill-box;
   }
 
   75% {
-    transform: translateY(-5px);
+    transform: translateY(-2.5px);
   }
 }
 
