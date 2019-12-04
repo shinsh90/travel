@@ -212,7 +212,9 @@ hr {
   left: 10%;
   top: 22%;
 }
-
+.svg_2 {
+  position: relative;
+}
 .svg_2 li {
   width: 100%;
   height: 100%;
